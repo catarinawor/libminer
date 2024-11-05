@@ -14,6 +14,10 @@ options(
   warnPartialMatchAttr = TRUE
 )
 
+#build handy documentation stuffs, including package doc file
+use_package_doc()
+
+
 
 
 #build readme
@@ -27,3 +31,14 @@ build_readme()
 
 library(usethis)
 usethis::use_testthat()
+
+#see example test in test-lib-summary
+#run test
+devtools::test()
+
+
+# check test coverage 
+test_coverage()
+
+#add dependencies, but I'd rather add things by hand
+use_package()
