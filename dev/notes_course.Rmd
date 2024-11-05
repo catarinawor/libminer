@@ -1,0 +1,29 @@
+
+#load packages
+devtools::load_all()
+devtools::document()
+
+#check structure of the package do it often
+devtools::check()
+
+
+# options to add more warnings
+options(
+  warnPartialMatchArgs = TRUE,
+  warnPartialMatchDollar = TRUE,
+  warnPartialMatchAttr = TRUE
+)
+
+
+
+#build readme
+use_readme_rmd()
+build_readme()
+
+
+#tests
+#ctrl+shift+T to run all the tests
+#ctrl_shift_F10 to restart
+
+library(usethis)
+usethis::use_testthat()
