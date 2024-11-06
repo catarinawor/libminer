@@ -8,10 +8,11 @@ License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-URL: https://github.com/catarinawor/libminer
+URL: https://github.com/catarinawor/libminer, https://catarinawor.github.io/libminer/
 BugReports: https://github.com/catarinawor/libminer/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
-    fs
+    fs,
+    purrr

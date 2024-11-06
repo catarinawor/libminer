@@ -1,7 +1,7 @@
 
 #load packages
 devtools::load_all()
-devtools::document()
+devtools::document() #ctrl +alt+shift+R
 
 #check structure of the package do it often
 devtools::check()
@@ -42,3 +42,12 @@ test_coverage()
 
 #add dependencies, but I'd rather add things by hand
 use_package()
+
+use_import_from("purrr", "map_dbl")
+
+#checks  for all different OS
+
+usethis::use_github_action()
+
+# tidyverse guidelines on naming
+#use verbs for functions
