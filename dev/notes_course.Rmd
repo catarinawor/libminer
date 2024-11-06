@@ -22,7 +22,8 @@ use_package_doc()
 
 #build readme
 use_readme_rmd()
-build_readme()
+
+devtools::build_readme()
 
 
 #tests
@@ -51,3 +52,9 @@ usethis::use_github_action()
 
 # tidyverse guidelines on naming
 #use verbs for functions
+
+#create template page 
+usethis::use_pkgdown_github_pages()
+
+
+usethis::use_vignette("using-libminer")

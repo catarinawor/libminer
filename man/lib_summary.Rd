@@ -2,19 +2,19 @@
 % Please edit documentation in R/lib-summary.R
 \name{lib_summary}
 \alias{lib_summary}
-\title{Provide number of R Packages by library}
+\title{R Library Summary}
 \usage{
 lib_summary(sizes = FALSE)
 }
 \arguments{
-\item{sizes}{Should sizes of libraries be calculated. Default \code{FALSE}}
+\item{sizes}{Should sizes of libraries be calculated. Default \code{FALSE}.}
 }
 \value{
-A data.frame containing the count of packages by library in each of
-the users libraries
+A data.frame containing the count of packages in each of the user's
+libraries
 }
 \description{
-Provide the number of R packages by library in a data.frame
+Provides a brief summary of the package libraries on your machine
 }
 \examples{
 lib_summary()
